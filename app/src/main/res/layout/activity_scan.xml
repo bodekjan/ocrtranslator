@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.bodekjan.camerax.widget.CameraSurfaceView
+        android:id="@+id/cameraSurfaceView"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.bodekjan.camerax.widget.RectOnCamera
+        android:id="@+id/rectOnCamera"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#99333333"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center">
+        <com.bodekjan.camerax.widget.NiceSpinner
+            android:id="@+id/nice_spinner"
+            app:textTint="@color/colorTextDark"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_margin="16dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center"
+            android:layout_weight="1">
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:visibility="gone"
+                android:id="@+id/backarrow"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:padding="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                app:iiv_color="@color/colorHomeCard"
+                app:iiv_icon="gmi-arrow-left" />
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:id="@+id/takePic"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:padding="6dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                app:iiv_color="@color/colorHomeCard"
+                app:iiv_icon="gmi_camera-alt" />
+            </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

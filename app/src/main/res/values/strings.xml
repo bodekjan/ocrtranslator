@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">camerax</string>
+    <string name="app_title">جادۇ كۆز تەرجىمانى</string>
+    <string name="item_camera">كامېرادىن تەرجىمە قىلىش</string>
+    <string name="item_gallery">يانفۇندىكى سۆرەتتىن</string>
+    <string name="item_language">تىل ئامبىرى</string>
+    <string name="title_translate">تەرجىمە نەتىجىسى</string>
+    <string name="item_history">تەرجىمە قىلغانلىرىم</string>
+    <string name="btn_translate">تەرجىمە قىلىش</string>
+    <string name="text_scanresult">تۇنۇش نەتىجىسى</string>
+    <string name="text_langresult">تەرجىمە نەتىجىسى</string>
+    <string name="text_viewall">تۇلۇق كۆرۈش</string>
+    <string name="setting_title">تەڭشەك</string>
+    <!-- variable string -->
+    <string name="packagesize">%1$s MB</string>
+</resources>

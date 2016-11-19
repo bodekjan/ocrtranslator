@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.bodekjan.camerax"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    /* 维语正常显示 */
+    compile 'com.github.neopixl:PixlUI:v1.1.0'
+    // 图标核心
+    compile 'com.mikepenz:iconics-core:2.8.1@aar'
+    // 常用图标
+    compile 'com.mikepenz:google-material-typeface:2.2.0.3.original@aar'
+    // 常用图标
+    compile 'com.mikepenz:material-design-iconic-typeface:2.2.0.2@aar'
+    // 天气图标
+    compile 'com.mikepenz:weather-icons-typeface:2.0.10.2@aar'
+    // 工具箱
+    compile 'com.blankj:utilcode:1.1.5'
+    // 图片选择器
+    compile 'com.github.lovetuzitong:MultiImageSelector:1.2'
+    /* spinner */
+//    compile 'com.github.ganfra:material-spinner:1.1.1'
+    /* ocr 工具 */
+    compile 'com.rmtheis:tess-two:6.0.4'
+}

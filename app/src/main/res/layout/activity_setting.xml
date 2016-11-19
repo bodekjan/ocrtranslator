@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.SettingActivity"
+    android:background="#f0f0f0">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_blue_light"
+        android:layout_height="49dp">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/backarrow"
+            style="@style/HeaderAdd"
+            app:iiv_color="@color/iconcolor"
+            app:iiv_icon="gmi-arrow-left" />
+        <np.TextView
+            style="@style/HeaderTitle"
+            android:textColor="@color/textcolor"
+            android:text="@string/setting_title"
+            android:id="@+id/citytitle"
+            android:gravity="center" />
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:visibility="invisible"
+            android:id="@+id/citymenu"
+            style="@style/HeaderAdd"
+            app:iiv_color="@color/iconcolor"
+            app:iiv_icon="gmi-menu" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+                    <LinearLayout
+                        android:id="@+id/versionbutton"
+                        style="@style/SettingButtonStyle">
+                        <np.TextView
+                            style="@style/SettingValueStyle"
+                            android:text="1.0"
+                            android:id="@+id/setting_item_version"/>
+                        <np.TextView
+                            style="@style/SettingItemStyle"
+                            android:text="version"
+                            android:layout_marginRight="8dp" />
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            style="@style/SettingIconStyle"
+                            app:iiv_color="@android:color/holo_blue_dark"
+                            app:iiv_icon="gmi-cloud-upload" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/aboutbutton"
+                        style="@style/SettingButtonStyle">
+                        <np.TextView
+                            style="@style/SettingItemStyle"
+                            android:text="about"
+                            android:layout_marginRight="8dp" />
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            style="@style/SettingIconStyle"
+                            app:iiv_color="@android:color/darker_gray"
+                            app:iiv_icon="gmi-account-circle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

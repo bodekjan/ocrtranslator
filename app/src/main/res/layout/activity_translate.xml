@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.LangActivity"
+    android:background="@color/colorBack">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_blue_light"
+        android:layout_height="49dp">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/backarrow"
+            style="@style/HeaderAdd"
+            app:iiv_color="@color/colorHomeCard"
+            app:iiv_icon="gmi-arrow-left" />
+        <np.TextView
+            style="@style/HeaderTitle"
+            android:textColor="@color/colorHomeCard"
+            android:text="@string/title_translate"
+            android:id="@+id/citytitle"
+            android:gravity="center" />
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/citymenu"
+            style="@style/HeaderAdd"
+            app:iiv_color="@color/colorHomeCard"
+            app:iiv_icon="gmi-help" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorHomeCard"
+                    android:layout_margin="10dp"
+                    android:elevation="2dp"
+                    android:focusable="false"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <np.TextView
+                        style="@style/ALKATIP"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorgreytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_scanresult"
+                        android:layout_marginBottom="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/abc"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorHomeCard"
+                    android:layout_margin="10dp"
+                    android:elevation="2dp"
+                    android:focusable="false"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <np.TextView
+                        style="@style/ALKATIP"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorgreytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_scanresult"
+                        android:id="@+id/textView"
+                        android:layout_marginBottom="5dp"/>
+
+                    <np.EditText
+                        style="@style/ALKATIP"
+                        android:textSize="14dp"
+                        android:background="@drawable/bg_searchtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextDark"
+                        android:padding="6dp"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/scanvalue"
+                        android:gravity="top|left"
+                        android:textAlignment="gravity" />
+
+                    <np.TextView
+                        style="@style/ALKATIP"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorgreytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_viewall"
+                        android:id="@+id/viewfullocr" />
+                </LinearLayout>
+                <np.Button
+                    style="@style/SubmitButtonStyle"
+                    android:text="@string/btn_translate"
+                    android:id="@+id/dialog_ver_submit"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorHomeCard"
+                    android:layout_margin="10dp"
+                    android:elevation="2dp"
+                    android:focusable="false"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <np.TextView
+                        style="@style/ALKATIP"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorgreytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_langresult"
+                        android:layout_marginBottom="5dp"/>
+
+                    <np.EditText
+                        style="@style/ALKATIP"
+                        android:textSize="14dp"
+                        android:background="@drawable/bg_searchtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextDark"
+                        android:padding="6dp"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/translatevalue"
+                        android:gravity="top|right"
+                        android:textAlignment="gravity" />
+
+                    <np.TextView
+                        style="@style/ALKATIP"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorgreytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_viewall"
+                        android:id="@+id/textView2" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.LangActivity"
+    android:background="@color/colorBack">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_blue_light"
+        android:layout_height="49dp">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/backarrow"
+            style="@style/HeaderAdd"
+            app:iiv_color="@color/colorHomeCard"
+            app:iiv_icon="gmi-arrow-left" />
+        <np.TextView
+            style="@style/HeaderTitle"
+            android:textColor="@color/colorHomeCard"
+            android:text="@string/item_language"
+            android:id="@+id/citytitle"
+            android:gravity="center" />
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:visibility="invisible"
+            android:id="@+id/citymenu"
+            style="@style/HeaderAdd"
+            app:iiv_color="@color/colorHomeCard"
+            app:iiv_icon="gmi-menu" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/languagelist"
+            android:divider="#999999"
+            android:dividerHeight="1px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </FrameLayout>
+</LinearLayout>

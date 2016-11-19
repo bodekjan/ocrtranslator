@@ -1,0 +1,103 @@
+<resources>
+    <style name="ALKATIP">
+        <item name="typeface">ALKATIP.TTF</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="DarkText">
+        <item name="typeface">ALKATIP.TTF</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="ItemIcon">
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_width">64dp</item>
+    </style>
+    <style name="HeaderTitle">
+        <item name="typeface">ALKATIP.TTF</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:color">@color/colorHomeCard</item>
+    </style>
+    <style name="HeaderAdd">
+        <item name="android:layout_width">39dp</item>
+        <item name="android:layout_height">39dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="SubmitButtonStyle">
+        <item name="typeface">ALKATIP.TTF</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@drawable/bg_submit_btn</item>
+        <item name="android:textColor">@color/colorHomeCard</item>
+    </style>
+    <style name="LangButtonStyle">
+        <item name="typeface">ALKATIP.TTF</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:background">@drawable/bg_submit_btn</item>
+        <item name="android:textColor">@color/colorHomeCard</item>
+    </style>
+    <style name="LangRedButtonStyle">
+        <item name="typeface">ALKATIP.TTF</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:background">@drawable/bg_remove_btn</item>
+        <item name="android:textColor">@color/colorHomeCard</item>
+    </style>
+    <style name="SettingButtonStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_setting_item</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+    <style name="SettingItemStyle">
+        <item name="typeface">ALKATIP.TTF</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/settingitemcolor</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="SettingIconStyle">
+        <item name="android:layout_height">22dp</item>
+        <item name="android:layout_width">22dp</item>
+    </style>
+    <style name="SettingValueStyle">
+        <item name="typeface">ALKATIP.TTF</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+</resources>

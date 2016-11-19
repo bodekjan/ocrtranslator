@@ -1,0 +1,74 @@
+{
+  "language":[
+    {
+      "title":"ئېنگلىز تىلى",
+      "img":"usa",
+      "size":21,
+      "status":"normal",
+      "filename":"eng"
+    },
+    {
+      "title":"خەنزۇتىلى",
+      "img":"china",
+      "size":40.1,
+      "status":"normal",
+      "filename":"chi_sim"
+    },
+    {
+      "title":"روس تىلى",
+      "img":"russia",
+      "size":15.4,
+      "status":"normal",
+      "filename":"rus"
+    },
+    {
+      "title":"تۈرۈك تىلى",
+      "img":"turkey",
+      "size":13.4,
+      "status":"normal",
+      "filename":"tur"
+    },
+    {
+      "title":"ياپۇن تىلى",
+      "img":"japan",
+      "size":31.5,
+      "status":"normal",
+      "filename":"jpn"
+    },
+    {
+      "title":"ئەرەب تىلى",
+      "img":"saudi",
+      "size":6,
+      "status":"normal",
+      "filename":"ara"
+    },
+    {
+      "title":"ئىسپان تىلى",
+      "img":"spain",
+      "size":15.2,
+      "status":"normal",
+      "filename":"spa"
+    },
+    {
+      "title":"ئىتالىيە تىلى",
+      "img":"italy",
+      "size":13.5,
+      "status":"normal",
+      "filename":"ita"
+    },
+    {
+      "title":"فىرانسوس تىلى",
+      "img":"france",
+      "size":13.3,
+      "status":"normal",
+      "filename":"fra"
+    },
+    {
+      "title":"پورتىگال تىلى",
+      "img":"portugal",
+      "size":12.3,
+      "status":"normal",
+      "filename":"por"
+    }
+  ]
+}
